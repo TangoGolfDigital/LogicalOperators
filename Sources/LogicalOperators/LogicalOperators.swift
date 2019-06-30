@@ -14,27 +14,27 @@ infix operator ⊕ : LogicalComparisonPrecedence  // EXCLUSIVE DISJUNCTION
 infix operator ≡ : LogicalComparisonPrecedence  // EQUIVALENCE
 
 extension Bool {
-    static prefix func ¬ (operand:Bool) -> Bool {
+    public static prefix func ¬ (operand:Bool) -> Bool {
         return !operand
     }
 
-    static func ∧ (left:Bool, right:Bool) -> Bool {
+    public static func ∧ (left:Bool, right:Bool) -> Bool {
         return left && right
     }
 
-    static func ∨ (left:Bool, right:Bool) -> Bool {
+    public static func ∨ (left:Bool, right:Bool) -> Bool {
         return left || right
     }
 
-    static func → (left:Bool, right:Bool) -> Bool {
+    public static func → (left:Bool, right:Bool) -> Bool {
         return !left || right
     }
 
-    static func ≡ (left:Bool, right:Bool) -> Bool {
+    public static func ≡ (left:Bool, right:Bool) -> Bool {
         return left == right
     }
 
-    static func ⊕ (left:Bool, right:Bool) -> Bool {
+    public static func ⊕ (left:Bool, right:Bool) -> Bool {
         return !(left == right)
     }
 
