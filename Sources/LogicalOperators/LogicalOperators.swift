@@ -6,6 +6,23 @@ precedencegroup LogicalImplicationPrecedence {
     higherThan: LogicalComparisonPrecedence
 }
 
+
+enum LogicalOperator : String {
+    case negation                 = "¬"
+    case conjunction              = "∧"
+    case negatedConjunction       = "⊼"
+    case disjunction              = "∨"
+    case negatedDisjunction       = "⊽"
+    case implication              = "→"
+    case converseImplication      = "←"
+    case bidrectionalImplication  = "↔"
+    case exclusiveDisjunction     = "⊕"
+    case exclusiveDisjunctionAltA = "⊻"
+    case exclusiveDisjunctionAltB = "⩒"
+    case equivalence              = "≡"
+    case inequivalence            = "≢"
+}
+
 prefix operator ¬                               // Negation
 infix operator ∧ : LogicalConjunctionPrecedence // Conjunction
 infix operator ⊼ : LogicalConjunctionPrecedence // Negated conjunction
