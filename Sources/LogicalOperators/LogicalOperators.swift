@@ -16,19 +16,19 @@ precedencegroup LogicalConjunctionPrecedence {
 
 
 enum LogicalOperator : String {
-    case negation                 = "¬"
-    case conjunction              = "∧"
-    case negatedConjunction       = "⊼"
-    case disjunction              = "∨"
-    case negatedDisjunction       = "⊽"
-    case implication              = "→"
-    case converseImplication      = "←"
-    case bidirectionalImplication = "↔"
-    case exclusiveDisjunction     = "⊕"
-    case exclusiveDisjunctionAltA = "⊻"
-    case exclusiveDisjunctionAltB = "⩒"
-    case equivalence              = "≡"
-    case inequivalence            = "≢"
+    case negation                 = "¬" // U+00AC
+    case conjunction              = "∧" // U+2227
+    case negatedConjunction       = "⊼" // U+22BC
+    case disjunction              = "∨" // U+2228
+    case negatedDisjunction       = "⊽" // U+22BD
+    case implication              = "→" // U+2192
+    case converseImplication      = "←" // U+2190
+    case bidirectionalImplication = "↔" // U+2194
+    case exclusiveDisjunction     = "⊕" // U+2295
+    case exclusiveDisjunctionAltA = "⊻" // U+22BB
+    case exclusiveDisjunctionAltB = "⩒" // U+2A52
+    case equivalence              = "≡" // U+2261
+    case inequivalence            = "≢" // U+2262
 }
 
 prefix operator ¬                               // Negation
