@@ -6,6 +6,14 @@ precedencegroup LogicalImplicationPrecedence {
     higherThan: LogicalComparisonPrecedence
 }
 
+precedencegroup LogicalDisjunctionPrecedence {
+    higherThan: LogicalImplicationPrecedence
+}
+
+precedencegroup LogicalConjunctionPrecedence {
+    higherThan: LogicalDisjunctionPrecedence
+}
+
 
 enum LogicalOperator : String {
     case negation                 = "¬"
