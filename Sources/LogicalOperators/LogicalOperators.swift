@@ -23,7 +23,7 @@ enum LogicalOperator : String {
     case negatedDisjunction       = "⊽"
     case implication              = "→"
     case converseImplication      = "←"
-    case bidrectionalImplication  = "↔"
+    case bidirectionalImplication = "↔"
     case exclusiveDisjunction     = "⊕"
     case exclusiveDisjunctionAltA = "⊻"
     case exclusiveDisjunctionAltB = "⩒"
