@@ -1,16 +1,20 @@
 precedencegroup LogicalComparisonPrecedence {
+    associativity: left
     higherThan: AssignmentPrecedence
 }
 
 precedencegroup LogicalImplicationPrecedence {
+    associativity: left
     higherThan: LogicalComparisonPrecedence
 }
 
 precedencegroup LogicalDisjunctionPrecedence {
+    associativity: left
     higherThan: LogicalImplicationPrecedence
 }
 
 precedencegroup LogicalConjunctionPrecedence {
+    associativity: left
     higherThan: LogicalDisjunctionPrecedence
 }
 
