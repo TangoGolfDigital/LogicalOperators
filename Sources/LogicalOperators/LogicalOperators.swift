@@ -19,7 +19,7 @@ precedencegroup LogicalConjunctionPrecedence {
 }
 
 
-enum LogicalOperator : String {
+public enum LogicalOperator : String {
     case negation                 = "¬" // U+00AC
     case conjunction              = "∧" // U+2227
     case negatedConjunction       = "⊼" // U+22BC
